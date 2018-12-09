@@ -18,7 +18,9 @@
       
 > - _History_
 
-      The language scala was invented by Martin Odersky. He started off making a language called Funnel at his university (EPFL).\n              The language was not very pleasent to use in practice since it was minimal and new users would struggle. This led him to start \n developing a language called scala in 2001. Scala first released in 2003.   \n
+      The language scala was invented by Martin Odersky. He started off making a language called Funnel at his university (EPFL).
+      The language was not very pleasent to use in practice since it was minimal and new users would struggle. This led him to start  
+      developing a language called scala in 2001. Scala first released in 2003.
      
 > - _Some interesting features_
       
@@ -76,8 +78,9 @@ val z = {
 
 > _Describe the compiler or interpreter needed_.
 
-      The compiler is based off of Java. To use the language you can either use an intelij plug in or a download for a command line \n           interface. Other ways to use scala would be to use a REPL and on MAC os is brew update, brew install scala \n
-      Scala is installed per project basis rather than system wide, this means that every project has its own version. \n
+      The compiler is based off of Java. To use the language you can either use an intelij plug in or a download for a command line i
+      nterface. Other ways to use scala would be to use a REPL and on MAC os is brew update, brew install scala.
+      Scala is installed per project basis rather than system wide, this means that every project has its own version.
       To set up the project structure on command line this must be used \n
       
 ```scala 
@@ -206,7 +209,9 @@ for(name <- studentNames
 community written in the language._
 
       lauris/awsome-scala
-      This is an open source repository where there is frame works, software, and libraries for all to use. Example are listed in the         repo at https://github.com/lauris/awesome-scala/blob/master/README.md
+      This is an open source repository where there is frame works, software, and libraries for 
+      all to use. Example are listed in the repo at 
+      https://github.com/lauris/awesome-scala/blob/master/README.md
 
 # Analysis of the language
 
