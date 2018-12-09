@@ -18,10 +18,11 @@
       
 > - _History_
 
+      The language scala was invented by Martin Odersky. He started off making a language called Funnel at his university (EPFL).              The language was not very pleasent to use in practice since it was minimal and new users would struggle. This led him to start developing a language called scala in 2001. Scala first released in 2003.   
      
 > - _Some interesting features_
       
-     Uses Function concepts such as Lambda Calculus, Immutable data, Closure, Function as values.
+     Uses Function concepts such as Lambda Calculus, Immutable data, Closure, and Function as values.
       
 
 ## About the syntax
