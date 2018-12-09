@@ -147,16 +147,12 @@ for(name <- studentNames
 }
 //--------------------------------------
 ```
-*Let form*
-
-```scala
-
-```
 
 ## About the tools
 
 > _Describe the compiler or interpreter needed_.
 
+      TOo
 ## About the standard library
 
 > _Give some examples of the functions and data structures
