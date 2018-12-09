@@ -6,14 +6,29 @@
 ## About the language
 
 > _Describe the language_
->
-> - History
+>     This language is object oriented. Scala uses java. Java has its own problems with OOP.
+      In Scala, all data are objects belonging to some class. All computation occurs in some method invocation.   
+      
+      Uses 
+      Symbols - a name of a variable that refer that to some data
+      Binding - an association of a symbol to some specific data
+      Scopes - a set of bindings such that each symbol is assicated to a unique data value.
+      
+      
+>- History
 > - Some interesting features
+      Uses Function concepts such as Lambda Calculus, Immutable data, Closure, Function as values.
+      
 
 ## About the syntax
 
 > _give some code snippet of the language_
+*Bindings*
+```scala
+var age : Int = 42
 
+val gender : String = "female"
+```
 *Let form*
 
 ```clojure
