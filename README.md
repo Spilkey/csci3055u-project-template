@@ -152,7 +152,9 @@ for(name <- studentNames
 
 > _Describe the compiler or interpreter needed_.
 
-      TOo
+      The compiler is based off of Java. To use the language you can either use an intelij plug in or a download for a command line           interface. Other ways to use scala would be to use a REPL and on MAC os is brew update, brew install scala
+      Scala is installed per project basis rather than system wide, this means that every project has its own version.
+      
 ## About the standard library
 
 > _Give some examples of the functions and data structures
