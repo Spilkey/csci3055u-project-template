@@ -220,10 +220,69 @@ community written in the language._
       This is an open source repository where there is frame works, software, and libraries for 
       all to use. Example are listed in the repo at 
       https://github.com/lauris/awesome-scala/blob/master/README.md
-
+      One open source library is ScalaFX. It is built on top of java fx 2 and 8.  
 # Analysis of the language
 
 > _Organize your report according to the project description
 document_.
+
+      1. Scala supports both procedural and Functional Programing as there is mutable and immutable objects a long with iterative loops and other procedural concepts mix in the mainly Functional based language.
+      
+      2.Scala does have the abilty to preform meta programming such as macro's
+      ex
+```scala
+//prototypical macro definition 
+def m(x: T): R = macro implRef
+```
+      
+      3. Symbol resolution is the concept of not knowing what a symbol means but resolving the unknown
+      Scala does support closure 
+      
+ ```scala
+ // mutiplier is a function which takes i and returns i * factor
+ //factor is not a formal paramater of the fucntion although it has a reference exteranlly
+ //if there is no external references then the fucntion is trivially closed over itself
+ 
+ object Demo {
+   def main(args: Array[String]) {
+      println( "multiplier(1) value = " +  multiplier(1) )
+      println( "multiplier(2) value = " +  multiplier(2) )
+   }
+   var factor = 3
+   val multiplier = (i:Int) => i * factor
+}     
+```
+
+      4. Lexical Scoping - scala does support lexical scoping
+   ```scala 
+def sqrt(x: Double) = {
+  def sqrtIter(guess: Double, x: Double): Double =
+    if (isGoodEnough(guess, x)) guess
+    else sqrtIter(improve(guess, x), x)
+
+  def improve(guess: Double, x: Double) =
+    (guess + x / guess) / 2
+
+  def isGoodEnough(guess: Double, x: Double) =
+    abs(square(guess) - x) < 0.001
+
+  sqrtIter(1.0, x)
+}   
+//vs 
+
+def sqrt(x: Double) = {
+  def sqrtIter(guess: Double): Double =
+    if (isGoodEnough(guess) guess
+    else sqrtIter(improve(guess))
+
+  def improve(guess: Double, x: Double) =
+    (guess + x / guess) / 2
+
+  def isGoodEnough(guess: Double, x: Double) =
+    abs(square(guess) - x) < 0.001
+
+  sqrtIter(1.0, x)
+}
+   ```
 
 
