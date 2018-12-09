@@ -17,8 +17,11 @@
       
       
 > - _History_
+
+     
 > - _Some interesting features_
-      Uses Function concepts such as Lambda Calculus, Immutable data, Closure, Function as values.
+      
+     Uses Function concepts such as Lambda Calculus, Immutable data, Closure, Function as values.
       
 
 ## About the syntax
@@ -50,13 +53,30 @@ class Car(year: Int, miles: Int) {
 val car = new Car(2016, 5000)
 car.drive(120)
 
-//arguments prefixed with var and val
-class Car(val year: Int, var miles: Int){
-      
-}
-```
-**
+//arguments prefixed with var and val ca be both constructor args and feilds of the class
+class Car(val year: Int, var miles: Int, maker_ : String){  
+ //Secondary Construcctor as def this(..)
+    def this(year_:Int, miles: Int) {
+       this(year, miles, "GM")
+    }
+    
+    var maker: String = if (maker_ == "GM") 
+                            "General Motors" 
+                        else
+                            maker_
 
+    def drive(distance: Int) {
+        milesDriven += Math.abs(distance)
+    }
+    def requiresEmissionTest : Boolean = milesDriven > 100000
+}
+
+```
+*Extending a class*
+```scala
+class Tesla(year: Int) 
+  extends Car(year, "Tesla Motor")
+```
 
 *Let form*
 
