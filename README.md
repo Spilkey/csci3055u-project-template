@@ -16,8 +16,8 @@
       Scopes - a set of bindings such that each symbol is assicated to a unique data value.
       
       
-> - History
-> - Some interesting features
+> - _History_
+> - _Some interesting features_
       Uses Function concepts such as Lambda Calculus, Immutable data, Closure, Function as values.
       
 
@@ -50,6 +50,7 @@ class Car(year: Int, miles: Int) {
 val car = new Car(2016, 5000)
 car.drive(120)
 
+//arguments prefixed with var and val
 class Car(val year: Int, var miles: Int){
       
 }
