@@ -33,12 +33,25 @@ val gender : String = "female"
 ```
  *Class*
 ```scala
-class Car {
-  private var milesDriven: Int = 0
-  def miles() = milesDriven
-  def drive(distance: Int) {
-      milesDriven += Math.abs(distance)
-  }
+
+class Car(year: Int, miles: Int) {
+    // Initialize the object fields
+    public val yearOfCar = year
+    public var milesDriven = miles
+
+    // Print a message
+    println("Constructing a car", year, miles)
+
+    def drive(distance: Int) {
+        milesDriven += Math.abs(distance)
+    }
+}
+// new keyword 
+val car = new Car(2016, 5000)
+car.drive(120)
+
+class Car(val year: Int, var miles: Int){
+      
 }
 ```
 **
