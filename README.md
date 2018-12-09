@@ -85,6 +85,8 @@ val z = {
       Other ways to use scala would be to use a REPL and on MAC os is 
       brew update, brew install scala.
       
+      This info can be found at https://www.scala-lang.org/download/
+      
       Scala is installed per project basis rather than system wide, this
       means that every project has its own version.
       To set up the project structure on command line this must be used 
