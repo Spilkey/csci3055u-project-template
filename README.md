@@ -18,9 +18,11 @@
       
 > - _History_
 
-      The language scala was invented by Martin Odersky. He started off making a language called Funnel at his university (EPFL).
-      The language was not very pleasent to use in practice since it was minimal and new users would struggle. This led him to start  
-      developing a language called scala in 2001. Scala first released in 2003.
+      The language scala was invented by Martin Odersky. He started off making a 
+      language called Funnel at his university (EPFL).The language was not very 
+      pleasent to use in practice since it was minimal and new users would struggle. 
+      This led him to start developing a language called scala in 2001. Scala first 
+      released in 2003.
      
 > - _Some interesting features_
       
@@ -78,10 +80,14 @@ val z = {
 
 > _Describe the compiler or interpreter needed_.
 
-      The compiler is based off of Java. To use the language you can either use an intelij plug in or a download for a command line i
-      nterface. Other ways to use scala would be to use a REPL and on MAC os is brew update, brew install scala.
-      Scala is installed per project basis rather than system wide, this means that every project has its own version.
-      To set up the project structure on command line this must be used \n
+      The compiler is based off of Java. To use the language you can either 
+      use an intelij plug in or a download for a command line interface. 
+      Other ways to use scala would be to use a REPL and on MAC os is 
+      brew update, brew install scala.
+      
+      Scala is installed per project basis rather than system wide, this
+      means that every project has its own version.
+      To set up the project structure on command line this must be used 
       
 ```scala 
 - hello-world
