@@ -29,6 +29,47 @@
 > _give some code snippet of the language_
 
 
+*In Clojure*
+```clojure
+(let [x 89
+      y 90]
+  (+ x y))
+```
+
+*In Scala*
+```scala
+//scala doesn't have let syntax but can mimic it
+def sumstuff : Int {
+      val x = 89
+      val y = 90
+      x + y
+      }      
+```
+*Bindings*
+```scala
+var age : Int = 42
+//variables can over writen ex, age += 1 is valid this means that they are mutable
+
+val gender : String = "female"
+//values cannot be changed 
+```
+
+*Expressions*
+```scala
+
+val x = 100
+val y = println("x=" + x)
+// or 
+val x = 100
+val y = 200
+val z = {
+    println(x)
+    println(y)
+    x + y // evaluates to last expression in the block
+}
+```
+
+
 
 ## About the tools
 
@@ -56,27 +97,7 @@
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
 
-*Bindings*
-```scala
-var age : Int = 42
 
-val gender : String = "female"
-```
-
-*Expressions*
-```scala
-
-val x = 100
-val y = println("x=" + x)
-// or 
-val x = 100
-val y = 200
-val z = {
-    println(x)
-    println(y)
-    x + y // evaluates to last expression in the block
-}
-```
 
 *Data Structures*
 ```scala
@@ -182,6 +203,9 @@ for(name <- studentNames
 
 > _Describe at least one contribution by the open source
 community written in the language._
+
+      lauris/awsome-scala
+      This is an open source repository where there is frame works, software, and libraries for all to use. Example are listed in the         repo at https://github.com/lauris/awesome-scala/blob/master/README.md
 
 # Analysis of the language
 
