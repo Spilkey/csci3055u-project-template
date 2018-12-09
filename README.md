@@ -34,7 +34,31 @@ var age : Int = 42
 
 val gender : String = "female"
 ```
- *Class*
+
+*Expressions*
+```scala
+
+val x = 100
+val y = println("x=" + x)
+// or 
+val x = 100
+val y = 200
+val z = {
+    println(x)
+    println(y)
+    x + y // evaluates to last expression in the block
+}
+```
+
+*Data Structures*
+```scala
+val array = Array(1,2,3,4)
+val list  = List(1,2,3,4)
+println("First element:" + array(0))
+println("First element:" + list(0))
+// uses (index)
+```
+*Class*
 ```scala
 
 class Car(year: Int, miles: Int) {
@@ -78,12 +102,55 @@ class Tesla(year: Int)
   extends Car(year, "Tesla Motor")
 ```
 
+*Scala Hashmaps*
+```scala
+//immutable
+val grades = Map("Mary" -> 90,
+                 "Jack" -> 80,
+                 "Joe" -> 76)
+
+val gradeOfMary: Int = grades("Mary")
+or
+//mutable
+val grades = scala.collection.mutable.Map(
+               "Mary" -> 90,
+               "Jack" -> 80,
+               "Joe" -> 76
+             )
+             
+grades += ("Bob" -> 98)
+grades.remove("Joe")
+grades("Jack") = 85
+```
+*Loops*
+```scala
+
+var i = 0
+while(i < 100) {
+    i += 1
+    println(">" + i)
+}
+
+for(i <- 0 to 5)
+    println(i)
+    
+
+//--looping over maps ------------------
+val studentNames = Array("Jack", "Mary", "Joe")
+for(name <- studentNames) {
+    println(name)
+}    
+
+for(name <- studentNames 
+         if name.startsWith("J")) {
+    println(name)
+}
+//--------------------------------------
+```
 *Let form*
 
-```clojure
-(let [x 10
-      y 20]
-  (+ x y))
+```scala
+
 ```
 
 ## About the tools
