@@ -226,17 +226,19 @@ community written in the language._
 > _Organize your report according to the project description
 document_.
 
-      1. Scala supports both procedural and Functional Programing as there is mutable and immutable objects a long with iterative loops and other procedural concepts mix in the mainly Functional based language.
+1. Scala supports both procedural and Functional Programing as there is 
+mutable and immutable objects a long with iterative loops and other procedural 
+concepts mix in the mainly Functional based language.
       
-      2.Scala does have the abilty to preform meta programming such as macro's
+2.Scala does have the abilty to preform meta programming such as macro's
       ex
 ```scala
 //prototypical macro definition 
 def m(x: T): R = macro implRef
 ```
       
-      3. Symbol resolution is the concept of not knowing what a symbol means but resolving the unknown
-      Scala does support closure 
+3. Symbol resolution is the concept of not knowing what a symbol means but resolving the unknown
+Scala does support closure 
       
  ```scala
  // mutiplier is a function which takes i and returns i * factor
@@ -253,7 +255,7 @@ def m(x: T): R = macro implRef
 }     
 ```
 
-      4. Lexical Scoping - scala does support lexical scoping
+4. Lexical Scoping - scala does support lexical scoping
 ```scala 
 def sqrt(x: Double) = {
   def sqrtIter(guess: Double, x: Double): Double =
@@ -284,13 +286,13 @@ def sqrt(x: Double) = {
   sqrtIter(1.0, x)
 }
 ```
-      Do to the lexical scoping of scala the x passed as an argument for sqrt can be accsesed 
-      by the auxillary functions in the inner scope not requiring them to pass the x between them
-      
-      Scala does not use Dynamic Scoping rules as Dynamic scoping checks the calling enviroment for
-      non-locals rather then the defining enviroment for non-locals. This means that programmers would 
-      have no idea how their code would be run
-      example
+Do to the lexical scoping of scala the x passed as an argument for sqrt can be accsesed 
+by the auxillary functions in the inner scope not requiring them to pass the x between them
+
+Scala does not use Dynamic Scoping rules as Dynamic scoping checks the calling enviroment for
+non-locals rather then the defining enviroment for non-locals. This means that programmers would 
+have no idea how their code would be run
+example
 ```scala
 val delta = 1e-10 // a global constant
 
@@ -305,6 +307,6 @@ def testIsSmall = {
 //Lexical/Static Scope delta in testInSmall = 1e-10
 //Dynamic = 100 since isSmall is called where delta = 100
 ``` 
-      5. 
+5. 
 
 
