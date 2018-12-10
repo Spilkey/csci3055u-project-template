@@ -254,7 +254,7 @@ def m(x: T): R = macro implRef
 ```
 
       4. Lexical Scoping - scala does support lexical scoping
-   ```scala 
+```scala 
 def sqrt(x: Double) = {
   def sqrtIter(guess: Double, x: Double): Double =
     if (isGoodEnough(guess, x)) guess
@@ -283,6 +283,6 @@ def sqrt(x: Double) = {
 
   sqrtIter(1.0, x)
 }
-   ```
+```
 
 
