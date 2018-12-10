@@ -284,5 +284,27 @@ def sqrt(x: Double) = {
   sqrtIter(1.0, x)
 }
 ```
+      Do to the lexical scoping of scala the x passed as an argument for sqrt can be accsesed 
+      by the auxillary functions in the inner scope not requiring them to pass the x between them
+      
+      Scala does not use Dynamic Scoping rules as Dynamic scoping checks the calling enviroment for
+      non-locals rather then the defining enviroment for non-locals. This means that programmers would 
+      have no idea how their code would be run
+      example
+```scala
+val delta = 1e-10 // a global constant
+
+def isSmall(x: Double) = {
+   math.abs(x) <= delta
+}
+
+def testIsSmall = {
+   val delta = 100
+   isSmall(delta/2) // 50 <= delta?
+}
+//Lexical/Static Scope delta in testInSmall = 1e-10
+//Dynamic = 100 since isSmall is called where delta = 100
+``` 
+      5. 
 
 
