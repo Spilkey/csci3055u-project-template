@@ -74,13 +74,7 @@ val z = {
 }
 ```
 *Data Structures*
-```scala
-val array = Array(1,2,3,4)
-val list  = List(1,2,3,4)
-println("First element:" + array(0))
-println("First element:" + list(0))
-// uses (index)
-```
+
 *Class*
 ```scala
 
@@ -206,11 +200,15 @@ for(name <- studentNames
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
 
+```scala
 
+val array = Array(1,2,3,4)
+val list  = List(1,2,3,4)
+println("First element:" + array(0))
+println("First element:" + list(0))
+// uses (index)
 
-
-
-
+```
 
 ## About open source library
 
@@ -309,9 +307,23 @@ def testIsSmall = {
 //Dynamic = 100 since isSmall is called where delta = 100
 ``` 
 5. 
-Scala supports main functional concepts such as Lambda Calculus, Immutable data, Closure, and Function as values.
+Scala supports main functional concepts such as Lambda Calculus, Immutable data, 
+Closure, and Function as values.
 
 6. Type System
-Scala 
+Scala uses Static types for all variables and functions. Scala also uses lexical scoping 
+not dynamic scoping 
 
+7. 
+- Pros
+      Easy to use based on java
+      Good IDE support
+      Scalanility
+      Functional
+      
+- Cons
+      Does not force you to always think functionally as you can always fall back on pbject oriented contructs
+      Type information harder to understand as is both functional and Object oriented 
+      has no true tail recursion optimization
 
+   
