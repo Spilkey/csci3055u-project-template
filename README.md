@@ -314,3 +314,4 @@ Scala supports main functional concepts such as Lambda Calculus, Immutable data,
 6. Type System
 Scala 
 
+
