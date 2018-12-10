@@ -1,4 +1,4 @@
-# _Your project title_
+# _Analyzing Scala_
 
 - _Samuel Pilkey_
 - _samuel.pilkey@uoit.net_
