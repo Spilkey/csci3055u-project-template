@@ -310,20 +310,22 @@ def testIsSmall = {
 Scala supports main functional concepts such as Lambda Calculus, Immutable data, 
 Closure, and Function as values.
 
-6. Type System
+6. 
+Type System
+
 Scala uses Static types for all variables and functions. Scala also uses lexical scoping 
 not dynamic scoping 
 
 7. 
 - Pros
-      Easy to use based on java
-      Good IDE support
-      Scalanility
-      Functional
+            Easy to use based on java
+            Good IDE support
+            Scalanility
+            Functional
       
 - Cons
-      Does not force you to always think functionally as you can always fall back on pbject oriented contructs
-      Type information harder to understand as is both functional and Object oriented 
-      has no true tail recursion optimization
+            Does not force you to always think functionally as you can always fall back on pbject oriented contructs
+            Type information harder to understand as is both functional and Object oriented 
+            has no true tail recursion optimization
 
    
