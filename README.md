@@ -73,44 +73,6 @@ val z = {
     x + y // evaluates to last expression in the block
 }
 ```
-
-
-
-## About the tools
-
-> _Describe the compiler or interpreter needed_.
-
-      The compiler is based off of Java. To use the language you can either 
-      use an intelij plug in or a download for a command line interface. 
-      Other ways to use scala would be to use a REPL and on MAC os is 
-      brew update, brew install scala.
-      
-      This info can be found at https://www.scala-lang.org/download/
-      
-      Scala is installed per project basis rather than system wide, this
-      means that every project has its own version.
-      To set up the project structure on command line this must be used 
-      
-```scala 
-- hello-world
-    - project (sbt uses this to install manage plugins and dependencies)
-        - build.properties
-    - src
-        - main
-            - scala (All of your scala code goes here)
-                -Main.scala (Entry point of program) <-- this is all we need for now
-    build.sbt (sbt's build definition file)
-
-```
-
-      
-## About the standard library
-
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
-
-
-
 *Data Structures*
 ```scala
 val array = Array(1,2,3,4)
@@ -211,6 +173,45 @@ for(name <- studentNames
 
 
 
+## About the tools
+
+> _Describe the compiler or interpreter needed_.
+
+      The compiler is based off of Java. To use the language you can either 
+      use an intelij plug in or a download for a command line interface. 
+      Other ways to use scala would be to use a REPL and on MAC os is 
+      brew update, brew install scala.
+      
+      This info can be found at https://www.scala-lang.org/download/
+      
+      Scala is installed per project basis rather than system wide, this
+      means that every project has its own version.
+      To set up the project structure on command line this must be used 
+      
+```scala 
+- hello-world
+    - project (sbt uses this to install manage plugins and dependencies)
+        - build.properties
+    - src
+        - main
+            - scala (All of your scala code goes here)
+                -Main.scala (Entry point of program) <-- this is all we need for now
+    build.sbt (sbt's build definition file)
+
+```
+
+      
+## About the standard library
+
+> _Give some examples of the functions and data structures
+> offered by the standard library_.
+
+
+
+
+
+
+
 ## About open source library
 
 > _Describe at least one contribution by the open source
@@ -308,5 +309,8 @@ def testIsSmall = {
 //Dynamic = 100 since isSmall is called where delta = 100
 ``` 
 5. 
+Scala supports main functional concepts such as Lambda Calculus, Immutable data, Closure, and Function as values.
 
+6. Type System
+Scala 
 
