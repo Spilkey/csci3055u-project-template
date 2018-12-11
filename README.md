@@ -321,12 +321,12 @@ not dynamic scoping
 
             Easy to use based on java
             Good IDE support
-            Scalanility
+            Scalability
             Functional
       
 - Cons
 
-            Does not force you to always think functionally as you can always fall back on pbject oriented contructs
+            Does not force you to always think functionally as you can always fall back on poject oriented contructs
             Type information harder to understand as is both functional and Object oriented 
             has no true tail recursion optimization
 
